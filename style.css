@@ -53,6 +53,7 @@ input{
     width: 90px;
     border-radius: 10%;
     margin-right: 30px;
+    margin-bottom: 10px;
     font-size: 80px;
     text-align: center;
 }
@@ -67,6 +68,7 @@ button:hover{
     background-color: red;
 }
 #show{
+    margin-bottom: 10px;
     border-radius: 100%;
     width: 50px;
     height: 50px;
@@ -88,4 +90,13 @@ button:hover{
 }
 img{
     border-radius: 5%;
+}
+#buttondiv{
+  margin: 0;
+  padding: 0;
+}
+button{
+    margin: 0;
+    
+    
 }

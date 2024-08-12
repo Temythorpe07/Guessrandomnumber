@@ -23,7 +23,27 @@
                 <div><input id="input" type="value" placeholder="?"></div>
                 <div id="show"></div>
             </div>
-            <button onclick="Check()">Check</button>
+            <span id="buttondiv">
+                    <button id="Num" onclick="number(1)">1</button>
+                    <button id="Num"  onclick="number(5)">5</button>
+                    <button id="Num"  onclick="number(3)">3</button>
+                    <button id="Num"  onclick="number(2)">2</button>
+            </span>  
+            <div>
+                    <button id="Num"  onclick="number(8)">8</button>
+                    <button id="Num"  onclick="number(4)">4</button>
+                    <button id="Num"  onclick="number(9)">9</button>
+                    <button id="Num"  onclick="number(6)">6</button>
+            </div>  
+            <span>
+                <button id="Num" onclick="number(0)">0</button>
+                <button id="Num" onclick="clearInput()">C</button>
+                <button onclick="Check()">Check</button>
+            </span>    
+                    
+                
+            
+            
             <div id="emoji">
                 <img src="wrong answer.jpg" alt="" width="150px" >
 
@@ -41,6 +61,7 @@
 
 </html>
 <script>
+let Num = document.getElementById("Num")
 let input = document.getElementById("input")
 let show = document.getElementById("show")
 let RandomN = document.getElementById("RandomN")
@@ -48,6 +69,13 @@ let emoji = document.getElementById("emoji")
 let emoji2 = document.getElementById("emoji2")
 
 
+function number(Num){
+    console.log(Num)
+    input.value += Num
+}
+function clearInput(){
+    input.value = '';
+}
 
    function Check(){
     let RandomN = Math.floor(Math.random() * 10) + 1;
