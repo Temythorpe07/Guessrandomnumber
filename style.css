@@ -1,0 +1,91 @@
+#container{
+    text-align: center;
+    justify-items: center;
+    border-radius: 8%;
+    box-shadow: 2px 2px 6px 2px;
+    height: 500px;
+    width: 30%;
+    background-color: aquamarine;
+    border: 1px black;
+
+}
+h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+    font-family: "Abril Fatface", serif;
+    color: red;
+}
+h3{
+    background-color: red;
+    color: ivory;
+    margin-bottom: 0;
+}
+h3:hover{
+    background-color: rgb(223, 53, 121);
+}
+h5{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Manrope", sans-serif;
+    color: red;
+    
+}
+#guessdiv{
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    gap: 10px;
+    
+}
+#yourguess{
+    font-family: "Abril Fatface", serif;
+    font-size: 40px;
+    margin-left: 10px;
+    
+}
+input{
+    border: 2px solid red;
+    height: 90px;
+    width: 90px;
+    border-radius: 10%;
+    margin-right: 30px;
+    font-size: 80px;
+    text-align: center;
+}
+button{
+    margin-top: 5px;
+    margin-right: 88px;
+    font-family: fantasy;
+    color: black;
+    box-shadow: 2px 1px 1px 0;
+}
+button:hover{
+    background-color: red;
+}
+#show{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid red;
+    color: red;
+    font-size: 40px;
+}
+#emoji{
+    margin-top: 10px;
+    border-radius: 20%;
+    display: none;
+
+}
+#emoji2{
+    margin-top: 10px;
+    display: none;
+    border-radius: 20%;
+    
+}
+img{
+    border-radius: 5%;
+}

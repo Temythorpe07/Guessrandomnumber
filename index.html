@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <div id="container">
+            <h2>HOW GOOD ARE YOU AT GUESSING?</h2>
+            <span></span><img src="guess.png" alt="" width="70px;">
+            <hr>
+            <h3>START</h3>
+            <h5>(Numbers Between 1 - 10)</h5>
+            <div id="guessdiv">
+                <span id="yourguess">Your Guess?</span>
+                <div><input id="input" type="value" placeholder="?"></div>
+                <div id="show"></div>
+            </div>
+            <button onclick="Check()">Check</button>
+            <div id="emoji">
+                <img src="wrong answer.jpg" alt="" width="150px" >
+
+            </div>
+            <div id="emoji2">
+                <img src="youre right.jpg" alt="" width="150px">
+
+            </div>
+           
+        </div>
+
+    </center>
+
+</body>
+
+</html>
+<script>
+let input = document.getElementById("input")
+let show = document.getElementById("show")
+let RandomN = document.getElementById("RandomN")
+let emoji = document.getElementById("emoji")
+let emoji2 = document.getElementById("emoji2")
+
+
+
+   function Check(){
+    let RandomN = Math.floor(Math.random() * 10) + 1;
+    console.log(RandomN)
+
+    if (Number(input.value) === RandomN) {
+        console.log('correct');
+        emoji.style.display = "none"
+        emoji2.style.display = "Block"
+    }else{
+        emoji.style.display = "Block"
+        emoji2.style.display = "none"
+    }
+
+   
+    show.innerHTML = RandomN
+}
+
+</script>
+
+
